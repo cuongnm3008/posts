@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+#wapper {
+  width: 100%;
+  height: auto;
+}
+
+/* -----------------------Header------------------ */
+#header {
+  padding-top: 44px;
+  background: #FFFFFF;
+}
+
+#header #menu {
+  font-size: 14px;
+}
+
+#wapper .wapper-header {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/* -----------------------Main------------------ */
+/* --------------Posts------------ */
+#main-content {
+  margin-bottom: 60px;
+  margin-top: 70.5px;
+}
+
+#main-content #posts .item {}
+
+/* --------------Sidebar------------ */
+#sidebar {}
+
+#sidebar #posts-group .item {
+  background-color: #FFFFFF;
+}
+
+#sidebar #posts-group .item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#sidebar #posts-group .item ul {
+  list-style: none;
+}
+
+#sidebar #posts-group .item ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#sidebar #posts-group .item ul li ::before {
+  content: "\2022";
+  color: #EE0033;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* --------------Contact------------ */
+@media screen and (min-width: 1200px) {
+  #posts .item {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    position: relative;
+    display: flex;
+  }
+
+  #contact .form-contact {
+    position: absolute;
+    top: 260px;
+    left: 280px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #posts .item {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    position: relative;
+    display: flex;
+  }
+
+  #contact .form-contact {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+/* --------------Footer------------ */
+#footer #footer-infor ul li {
+  list-style: none;
+  font-weight: bold;
+
+}
+
+#footer #footer-infor ul li a {
+  color: #333333;
+}
+
+#footer {}
