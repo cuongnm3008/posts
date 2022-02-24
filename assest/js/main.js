@@ -1,11 +1,24 @@
-$(document).ready(function(){
-    $("#toggle").click(function(){
-        let check =  $("#menu").hasClass("active-menu");
-        alert(check);
-        if (check===true) {
-            $("#menu").removeClass("active-menu");
+$(document).ready(function () {
+    $(".navbar-toggler").click(function () {
+        alert("Hello");
+    });
+});
+
+
+
+// Back to top
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('#backTop').fadeIn();
         } else {
-            $("#menu").addClass("active-menu");
+            $('#backTop').fadeOut();
         }
     });
-  });
+});
+
+$('#backTop').click(function (e) {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
+})

@@ -1,15 +1,21 @@
-body {
+
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+body,html {
+  width: 100%;
+	height: 100%;
+  font-family: 'Inter';
   background-color: rgb(240, 240, 240);
 }
 
 #wapper {
   width: 100%;
   height: auto;
+ 
 }
 
-/* -----------------------Header------------------ */
+-----------------------Header------------------
 #header {
-  padding-top: 44px;
   background: #FFFFFF;
   padding-bottom: 20px;
 }
@@ -30,13 +36,13 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 50px;
+  position: fixed;
 }
 
 /* -----------------------Main------------------ */
 
 #main-content {
-  margin-bottom: 60px;
-  margin-top: 70.5px;
 }
 
 /* --------------Posts------------ */
@@ -48,23 +54,14 @@ body {
 }
 
 
-#posts .item h5 {
-  font-weight: 600;
-  font-size: 20px;
-  margin: 18px 0px 13px 0px;
-  padding: 0px 18px;
-}
 
-#posts .item p {
-  padding: 0px 18px;
-}
 
 */
 
 #posts .item {
   /* width: 47%; */
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   min-height: 563px;
 }
@@ -78,6 +75,18 @@ body {
   width: 127px;
   height: 43px;
 } 
+
+#posts .item h5 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 18px 0px 13px 0px;
+  padding: 0px 18px;
+}
+
+#posts .item p {
+  padding: 0px 18px;
+}
+
 /* --------------Sidebar------------ */
 
 #sidebar #posts-group .item {
@@ -136,8 +145,102 @@ body {
 
 #contact .form-contact {
   position: absolute;
-  top: 210px;
-  left: 300px;
+  top: 105px;
+  left: 65px;
+}
+
+
+/* --------------Footer------------ */
+#footer #footer-infor ul li {
+  list-style: none;
+  font-weight: bold;
+
+}
+
+#footer #footer-infor ul li a {
+  color: #333333;
+  display: block;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+/*-------------------------- BACKTOP AND RING----------------------- */
+
+#backTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5b5b5;
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  right: 36px;
+  bottom: 132px;
+  padding: 13.5px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.hl-ring {
+  position: fixed;
+  bottom: 57px;
+  right: 30px;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  z-index: 999;
+  border: none;
+  background: #ee0033;
+  border-radius: 50%;
+}
+
+.hl-ring .host-circle {
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+  width: 64px;
+  height: 64px;
+  top: -5px;
+  right: -5px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  opacity: 0.1;
+  border-color: #f02937;
+  opacity: 0.5;
+}
+
+.hl-ring .host-circle-fill {
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: pulse;
+  width: 70px;
+  height: 70px;
+  top: -7px;
+  right: -8px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  background-color: #f02937;
+  opacity: 0.15;
+}
+
+
+
+/*---------------- Copyright -------------*/
+#copyright {
+  padding-bottom: 49px;
+}
+
+#copyright .social-media i {
+  font-size: 39px;
+  margin-right: 20px;
+  color: #4F4F4F;
 }
 
 /* 
@@ -146,7 +249,7 @@ body {
 } */
 
 
-@media (max-width: 414px) {
+@media (max-width: 456px) {
 
   /* -------Header-------- */
   #header .logo img {
@@ -217,28 +320,13 @@ body {
 
 }
 
-
-/* --------------Footer------------ */
-#footer #footer-infor ul li {
-  list-style: none;
-  font-weight: bold;
-
+.your-class .slick-dots li button:before {
+  font-size: 48px;
+  color: #EE0033;
+  opacity: 1;
 }
 
-#footer #footer-infor ul li a {
-  color: #333333;
-  display: block;
-  padding: 5px 0px;
-  font-size: 14px;
-}
-
-/*---------------- Copyright -------------*/
-#copyright {
-  padding-bottom: 49px;
-}
-
-#copyright .social-media i {
-  font-size: 39px;
-  margin-right: 20px;
-  color: #4F4F4F;
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: gray !important;
 }

@@ -6,3 +6,16 @@
    color:  #EE0033;
 }
 
+
+.navbar li a {
+    color: #333333 !important;
+}
+.navbar li a:hover {
+    color: #EE0033 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: gray !important;
+}
+
