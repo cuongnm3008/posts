@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/assest/css/reset.css">
     <link rel="stylesheet" href="/assest/css/global.css">
     <link rel="stylesheet" href="/assest/css/style.css">
-
     <!-- --------------------test slideshow----------------------- -->
     <link rel="stylesheet" type="text/css" href="/assest/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="/assest/css/slick-theme.css" />
@@ -25,10 +24,10 @@
         <!--------------------HEADER -------------------->
         <div id="header" class="sticky-top border-bottom mb-5 bg-light">
             <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container">
+                <div class="container-fluid w-75">
                     <div class="col-md-4 col-sm-3 col-6 ">
                         <a class="navbar-branch" href="#">
-                            <img src="./images/logo.png" height="50" class="img-fluid">
+                            <img src="./images/logo.png" class="img-fluid">
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -36,8 +35,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" style="color: #EE0033 !important;" href="#">Danh mục</a>
+                            <li class="nav-item" style="margin-top: 2px;">
+                                <a class="nav-link" style="color: #EE0033 !important; font-weight: 600;" href="#">Danh mục</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Nhà cung cấp</a>
@@ -46,34 +45,122 @@
                                 <a class="nav-link" href="#">Về chúng tôi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tin tức </a>
+                                <a class="nav-link" href="#">Tin tức</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Tuyển dụng</a>
                             </li>
                         </ul>
                         <div class="action ml-auto nav-item">
-                            <button class="btn-login btn btn-outline-dark">Đăng ký</button>
-                            <button class="btn-register btn btn-danger">Đăng nhập</button>
+                            <button class="btn btn-outline-dark font-weight-bold">Đăng ký</button>
+                            <button class="btn btn-danger ml-3">Đăng nhập</button>
                         </div>
                     </div>
                 </div>
             </nav>
-        </div>
+                <div id="nav-mobile">
+                    <div id="wapper-phone-menu">
+                        <div class="nav_phone-header">
+                            <img src="/images/logo.png" alt="logo" class="img-fluid">
+                            <i class="fa-solid fa-xmark" id="closePhoneMenu"></i>
+                        </div>
+                        <ul class="navbar-nav pl-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Danh
+                                    mục</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Nhà cung cấp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Về chúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Tuyển dụng</a>
+                            </li>
+                            <div class="nav-item">
+                                <button class="btn btn-outline-dark font-weight-bold"><a class="text-dark" href="">Đăng ký</a></button>
+                                <button class="btn btn-danger ml-3">Đăng nhập</button>
+                            </div>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="container">
-            <div id="main-content">
-                <div class="row">
-                    <div class=" col-md-12 col-lg-8">
-                        <div id="posts">
-                            <div class="your-class">
-                                <!-- This will be considered one slide -->
-                                <div>
+            <div class="container-fluid w-75">
+                <div id="main-content">
+                    <div class="row">
+                        <div class=" col-md-12 col-lg-8">
+                            <div id="posts">
+                                <div class="your-class">
+                                    <!-- This will be considered one slide -->
+                                    <div>
+                                        <div class="slide">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="item">
+                                                        <img src="images/post1.png" alt="">
+                                                        <h5>Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn
+                                                            không
+                                                            có đủ tiền
+                                                            trong tài khoản.</h5>
+                                                        <p>Khi có sự cố , hoặc khi chúng ta muốn ưu tiên sức khỏe của
+                                                            mình,
+                                                            tiếp cận các
+                                                            dịch vụ y tế mà chúng ta cần...</p>
+                                                        <button class="btn btn-danger">Xem thêm</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="item">
+                                                        <img src="images/post2.png" alt="">
+                                                        <h5>Cách chọn nhà cung cấp dịch vụ chăm sóc sức khỏe phù hợp
+                                                        </h5>
+                                                        <p>Tìm đúng nhà cung cấp dịch vụ chăm sóc sức khỏe đồng thời là
+                                                            một
+                                                            nhiệm vụ khó
+                                                            khăn và quan trọng. Một số yếu tố dẫn đến...</p>
+                                                        <button class="btn btn-danger">Xem thêm</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="item ">
+                                                        <img src="images/post3.png" alt="">
+                                                        <h5>Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của
+                                                            bạn
+                                                        </h5>
+                                                        <p>Được cung cấp nhiên liệu bởi COVID-19 và các hạn chế về năng
+                                                            lực,
+                                                            những năm
+                                                            gần đây dã chứng kiến nhiều sự tiếc nuối trong ...</p>
+                                                        <button class="btn btn-danger">Xem thêm</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="item">
+                                                        <img src="images/post4.png" alt="">
+                                                        <h5>Tại sao chăm sóc sức khỏe sao lại đẳt như vậy ?</h5>
+                                                        <p>Chứng tôi không cần thực hiện nghiên cứu sâu rộng, chỉ cần nó
+                                                            tốt
+                                                            cho sức
+                                                            khỏe...</p>
+                                                        <button class="btn btn-danger">Xem thêm</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- The second slide -->
                                     <div class="slide">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="item">
-                                                    <img src="images/post1.png" alt="">
+                                                    <img src="images/post3.png" alt="">
                                                     <h5>Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không
                                                         có đủ tiền
                                                         trong tài khoản.</h5>
@@ -95,7 +182,7 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="item ">
-                                                    <img src="images/post3.png" alt="">
+                                                    <img src="images/post1.png" alt="">
                                                     <h5>Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
                                                     </h5>
                                                     <p>Được cung cấp nhiên liệu bởi COVID-19 và các hạn chế về năng lực,
@@ -106,7 +193,7 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="item">
-                                                    <img src="images/post4.png" alt="">
+                                                    <img src="images/post1.png" alt="">
                                                     <h5>Tại sao chăm sóc sức khỏe sao lại đẳt như vậy ?</h5>
                                                     <p>Chứng tôi không cần thực hiện nghiên cứu sâu rộng, chỉ cần nó tốt
                                                         cho sức
@@ -118,121 +205,76 @@
 
                                     </div>
                                 </div>
-                                <!-- The second slide -->
-                                <div class="slide">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="item">
-                                                <img src="images/post3.png" alt="">
-                                                <h5>Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không
-                                                    có đủ tiền
-                                                    trong tài khoản.</h5>
-                                                <p>Khi có sự cố , hoặc khi chúng ta muốn ưu tiên sức khỏe của mình,
-                                                    tiếp cận các
-                                                    dịch vụ y tế mà chúng ta cần...</p>
-                                                <button class="btn btn-danger">Xem thêm</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="item">
-                                                <img src="images/post2.png" alt="">
-                                                <h5>Cách chọn nhà cung cấp dịch vụ chăm sóc sức khỏe phù hợp</h5>
-                                                <p>Tìm đúng nhà cung cấp dịch vụ chăm sóc sức khỏe đồng thời là một
-                                                    nhiệm vụ khó
-                                                    khăn và quan trọng. Một số yếu tố dẫn đến...</p>
-                                                <button class="btn btn-danger">Xem thêm</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="item ">
-                                                <img src="images/post1.png" alt="">
-                                                <h5>Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
-                                                </h5>
-                                                <p>Được cung cấp nhiên liệu bởi COVID-19 và các hạn chế về năng lực,
-                                                    những năm
-                                                    gần đây dã chứng kiến nhiều sự tiếc nuối trong ...</p>
-                                                <button class="btn btn-danger">Xem thêm</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="item">
-                                                <img src="images/post1.png" alt="">
-                                                <h5>Tại sao chăm sóc sức khỏe sao lại đẳt như vậy ?</h5>
-                                                <p>Chứng tôi không cần thực hiện nghiên cứu sâu rộng, chỉ cần nó tốt
-                                                    cho sức
-                                                    khỏe...</p>
-                                                <button class="btn btn-danger">Xem thêm</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4">
-                        <div id="sidebar">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 mb-3">
-                                    <div class="search rounded">
-                                        <div class="input-group border">
-                                            <input type="search" placeholder="Tìm kiếm..."
-                                                aria-describedby="button-addon1" class="form-control border-0 bg-white">
-                                            <div class="input-group-append bg-white">
-                                                <button id="button-addon1" type="submit" class="btn btn-link">
-                                                    <i class="fa fa-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="posts-group">
+                        <div class="col-md-12 col-lg-4">
+                            <div id="sidebar">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-6 mb-2 rounded">
-                                        <div class="item p-2 rounded">
-                                            <h3>Sức khoẻ - tài chính</h3>
-                                            <hr>
-                                            <ul>
-                                                <li><a href="">Hỗ trợ tài chính khi khám sức khỏe</a></li>
-                                                <li><a href="">Trải nghiệm của khách hàng với dịch vụ khám sức khỏe tại
-                                                        Heno</a></li>
-                                                <li><a href="">Khi bạn không đủ tiền trong tài khoản</a></li>
-                                            </ul>
+                                    <div class="col-lg-12 col-md-6 mb-3">
+                                        <div class="search rounded">
+                                            <div class="input-group border">
+                                                <input type="search" placeholder="Tìm kiếm..."
+                                                    aria-describedby="button-addon1"
+                                                    class="form-control border-0 bg-white">
+                                                <div class="input-group-append bg-white">
+                                                    <button id="button-addon1" type="submit" class="btn btn-link">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-6 mb-2 ">
-                                        <div class="item p-2 rounded">
-                                            <h3>Tin đối tác</h3>
-                                            <hr>
-                                            <ul>
-                                                <li><a href="">Hỗ trợ tài chính khi khám sức khỏe</a></li>
-                                                <li><a href="">Trải nghiệm của khách hàng với dịch vụ khám sức khỏe tại
-                                                        Heno</a></li>
-                                                <li><a href="">Khi bạn không đủ tiền trong tài khoản</a></li>
-                                            </ul>
+                                </div>
+                                <div id="posts-group">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 mb-2 rounded">
+                                            <div class="item p-2 rounded">
+                                                <h3 class="p-2">Sức khoẻ - tài chính</h3>
+                                                <hr>
+                                                <ul>
+                                                    <li><a href="">Hỗ trợ tài chính khi khám sức khỏe</a></li>
+                                                    <li><a href="">Trải nghiệm của khách hàng với dịch vụ khám sức khỏe
+                                                            tại
+                                                            Heno</a></li>
+                                                    <li><a href="">Khi bạn không đủ tiền trong tài khoản</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-6 mb-2">
-                                        <div class="item p-2 rounded">
-                                            <h3>Khuyến mãi</h3>
-                                            <hr>
-                                            <ul>
-                                                <li><a href="">Nhân dịp đầu xuân miễn phi hướng dẫn với khách hàng</a>
-                                                </li>
-                                                <li><a href="">Giảm 20% với khách hàng giới thiệu</a></li>
-                                            </ul>
+                                        <div class="col-lg-12 col-md-6 mb-2 ">
+                                            <div class="item p-2 rounded">
+                                                <h3 class="p-2">Tin đối tác</h3>
+                                                <hr>
+                                                <ul>
+                                                    <li><a href="">Hỗ trợ tài chính khi khám sức khỏe</a></li>
+                                                    <li><a href="">Trải nghiệm của khách hàng với dịch vụ khám sức khỏe
+                                                            tại
+                                                            Heno</a></li>
+                                                    <li><a href="">Khi bạn không đủ tiền trong tài khoản</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-6 mb-2 ">
-                                        <div class="item p-2 rounded">
-                                            <h3>Hướng dẫn sử dụng</h3>
-                                            <hr>
-                                            <ul>
-                                                <li><a href="">Video hướng dẫn</a></li>
-                                                <li><a href="">Bảng chỉ dẫn chi tiết</a></li>
-                                                <li><a href="">Một số điều cần lưu ý khi sử dụng</a></li>
-                                            </ul>
+                                        <div class="col-lg-12 col-md-6 mb-2">
+                                            <div class="item p-2 rounded">
+                                                <h3 class="p-2">Khuyến mãi</h3>
+                                                <hr>
+                                                <ul>
+                                                    <li><a href="">Nhân dịp đầu xuân miễn phi hướng dẫn với khách
+                                                            hàng</a>
+                                                    </li>
+                                                    <li><a href="">Giảm 20% với khách hàng giới thiệu</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-6 mb-2 ">
+                                            <div class="item p-2 rounded">
+                                                <h3 class="p-2">Hướng dẫn sử dụng</h3>
+                                                <hr>
+                                                <ul>
+                                                    <li><a href="">Video hướng dẫn</a></li>
+                                                    <li><a href="">Bảng chỉ dẫn chi tiết</a></li>
+                                                    <li><a href="">Một số điều cần lưu ý khi sử dụng</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -242,118 +284,123 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------------------ CONTACT----------------------------------->
-    <div id="contact">
-        <img src="images/Background.png" alt="" class="img-fluid">
-        <div class="form-contact">
-            <div class="col-lg-8">
-                <h1 class="text-center text-white mb-3">Chăm sóc sức khoẻ, sắc đẹp của bạn ngay hôm nay. </h1>
-                <h3 class="text-white text-center mb-5">Hãy để lại liên lạc để chúng tôi tư vẫn cho bạn</h3>
-                <form action="">
+        <!------------------------------------ CONTACT----------------------------------->
+        <div id="contact">
+            <!-- <img src="images/Background.png" alt="" class="img-fluid"> -->
+            <div class="container-fluid w-75">
+                <div class="form-contact">
                     <div class="row">
-                        <div class="col-lg-6  mb-2">
-                            <input class="form-control" type="text" placeholder="Họ và tên">
+                        <div class="col-lg-6">
+                            <h1 class="text-center text-white mb-3">Chăm sóc sức khoẻ, sắc đẹp của bạn ngay hôm nay.
+                            </h1>
+                            <h3 class="text-white text-center mb-5">Hãy để lại liên lạc để chúng tôi tư vẫn cho bạn</h3>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Họ và tên">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Email(nếu có)">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-2">
+                                        <input class="form-control" type="text" placeholder="Dịch vụ quan tâm">
+                                    </div>
+                                </div>
+                                <button class="col-lg-12 btn btn-warning text-white">Nhận tư vấn ngay</button>
+                            </form>
                         </div>
-                        <div class="col-lg-6  mb-2">
-                            <input class="form-control" type="text" placeholder="Email(nếu có)">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6  mb-2">
-                            <input class="form-control" type="text" placeholder="Số điện thoại">
-                        </div>
-                        <div class="col-lg-6  mb-2">
-                            <input class="form-control" type="text" placeholder="Dịch vụ quan tâm">
-                        </div>
-                    </div>
-                    <button class="col-lg-12 btn btn-warning text-white">Nhận tư vấn ngay</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container-fluid w-75">
-            <div class="mt-5 mb-5">
-                <img class="logo" src="images/logo.png" alt="logo" class="img-fluid">
-            </div>
-            <div id="footer-infor">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <ul class="p-0">
-                            <li><a href="">Khách hàng</a></li>
-                            <li><a href="">Đối tác Heno</a></li>
-                            <li><a href="">Về chúng tôi</a></li>
-                            <li><a href="">Liên hệ và hỗ trợ</a></li>
-                            <li><a href="">Điều kiện & Điều khoản</a></li>
-                            <li><a href="">Chính sánh quyền riêng tư</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <ul class="p-0">
-                            <li class=""><a href="">Đăng nhập dành cho Khách hàng</a></li>
-                            <li class="mt-2"><a href="">Đăng nhập dành cho Nhà cung cấp</a></li>
-                            <li><button class="btn btn-outline-dark font-weight-bold mt-2">Tham gia cùng chúng
-                                    tôi</button></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <ul class="p-0">
-                            <li class="text-14 mb-2">
-                                Hỗ trợ bán hàng
-                            </li>
-                            <span class="text-14">
-                                <img src="images/mail.png" alt="">
-                                contact@heno.vn
-                            </span>
-                            <li class="text-14 mt-2 mb-2">
-                                Hỗ trợ nhà cung cấp
-                            </li>
-                            <span class="text-14 mt-2">
-                                <img src="images/mail.png" alt="">
-                                partner@heno.vn</span>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <h5 class="mb-3 text-default-color font-weight-bold">Công ty Cổ Phần Công Nghệ Healthcare Now
-                        </h5>
-                        <p class="text-14">
-                            <img src="images/hash.png" alt="">
-                            MST: 0109823770
-                        </p>
-                        <p class="text-14">
-                            <img src="images/map-pin.png" alt="">
-                            B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-------------------- Copyright ------------------>
-            <div id="copyright">
-                <div class="row mt-5">
-                    <div class="social-media d-flex flex-grow-1 float-left">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="brand float-right">
-                        Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="backTop">
-        <i class="fa-solid fa-arrow-up"></i>
-    </div>
-    <button class="hl-ring">
-        <a id="phone-ring" target="_blank" href="##" class="phone">
-            <div class="animated host-circle"></div>
-            <div class="animated host-circle-fill"></div>
-            <img src="/images/HomePage/phone-ring.png" alt="ring">
-        </a>
-    </button>
+        <div id="footer">
+            <div class="container-fluid w-75">
+                <div class="mt-5 mb-5">
+                    <img class="logo" src="images/logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div id="footer-infor">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <ul class="p-0">
+                                <li><a href="">Khách hàng</a></li>
+                                <li><a href="">Đối tác Heno</a></li>
+                                <li><a href="">Về chúng tôi</a></li>
+                                <li><a href="">Liên hệ và hỗ trợ</a></li>
+                                <li><a href="">Điều kiện & Điều khoản</a></li>
+                                <li><a href="">Chính sánh quyền riêng tư</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <ul class="p-0">
+                                <li class=""><a href="">Đăng nhập dành cho Khách hàng</a></li>
+                                <li class="mt-2"><a href="">Đăng nhập dành cho Nhà cung cấp</a></li>
+                                <li><button class="btn btn-outline-dark font-weight-bold mt-2">Tham gia cùng chúng
+                                        tôi</button></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <ul class="p-0">
+                                <li class="text-14 mb-2">
+                                    Hỗ trợ bán hàng
+                                </li>
+                                <span class="text-14">
+                                    <img src="images/mail.png" alt="">
+                                    contact@heno.vn
+                                </span>
+                                <li class="text-14 mt-2 mb-2">
+                                    Hỗ trợ nhà cung cấp
+                                </li>
+                                <span class="text-14 mt-2">
+                                    <img src="images/mail.png" alt="">
+                                    partner@heno.vn</span>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <h5 class="mb-3 text-default-color font-weight-bold">Công ty Cổ Phần Công Nghệ Healthcare
+                                Now
+                            </h5>
+                            <p class="text-14">
+                                <img src="images/hash.png" alt="">
+                                MST: 0109823770
+                            </p>
+                            <p class="text-14">
+                                <img src="images/map-pin.png" alt="">
+                                B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------- Copyright ------------------>
+                <div id="copyright">
+                    <div class="row mt-5">
+                        <div class="social-media d-flex flex-grow-1 float-left">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="brand float-right">
+                            Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="backTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <button class="hl-ring">
+            <a id="phone-ring" target="_blank" href="##" class="phone">
+                <div class="animated host-circle"></div>
+                <div class="animated host-circle-fill"></div>
+                <img src="/images/phone-ring.png" alt="contact me">
+            </a>
+        </button>
     </div>
     </div>
     <script src="assest/js/main.js"></script>

@@ -1,10 +1,11 @@
 $(document).ready(function () {
     $(".navbar-toggler").click(function () {
-        alert("Hello");
+        $('#wapper-phone-menu').css("width", "1000px");
+    });
+    $("#closePhoneMenu").click(function () {
+        $('#wapper-phone-menu').css("width", "0px");
     });
 });
-
-
 
 // Back to top
 $(document).ready(function () {
