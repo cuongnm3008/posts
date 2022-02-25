@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $(".navbar-toggler").click(function () {
-        $('#wapper-phone-menu').css("width", "1000px");
+        $('#wapper-phone-menu').attr('style', 'width: 450px ');
     });
     $("#closePhoneMenu").click(function () {
-        $('#wapper-phone-menu').css("width", "0px");
+        $('#wapper-phone-menu').attr('style', 'width: 0px ');
     });
 });
 
